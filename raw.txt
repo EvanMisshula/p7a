@@ -1,0 +1,52 @@
+Instructions
+
+Project: Trading System with Abstract and Virtual Classes Using Deque (No Multi-threading)
+
+ 
+
+ 
+
+Key Components:
+
+ 
+
+1. Abstract Classes: Define abstract classes for core components like Order, OrderManager, TradingStrategy, and MarketSimulator. These abstract classes will have virtual methods that will be implemented by derived classes.
+
+2. Deque for Data Passing: Use std::deque to pass data between the TradingStrategy, OrderManager, and MarketSimulator components. The deque will simulate communication between these components by acting as a queue for sending and receiving orders and execution reports.
+
+3. Trading Strategy: A basic trading strategy will process order book updates and generate signals (buy/sell orders). It will interact with the OrderManager and MarketSimulator using the deque.
+
+ 
+
+Project Structure:
+
+ 
+
+1. Abstract Classes
+
+Define abstract classes that form the foundation of the system. Each class will have virtual functions that must be implemented by the derived classes.
+
+a. Order Class (Abstract)
+b. OrderManager Class (Abstract)
+c. TradingStrategy Class (Abstract)
+d. MarketSimulator Class (Abstract)
+
+2. Derived Classes
+
+Implement concrete classes that derive from the abstract classes,
+providing specific functionality.
+
+a. Concrete Order Class
+b. Concrete OrderManager Class
+c. Concrete TradingStrategy Class
+d. Concrete MarketSimulator Class
+
+3. Main Program Flow
+
+The main() function will coordinate the interaction between the
+TradingStrategy, OrderManager, and MarketSimulator using a std::dequ e.
+
+ 
+
+
+ 
